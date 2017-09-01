@@ -6,6 +6,7 @@ var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
+var connect  = require('gulp-connect-php');
 var pkg = require('./package.json');
 
 // Set the banner content
@@ -74,12 +75,17 @@ gulp.task('copy', function() {
 gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
 
 // Configure the browserSync task
+// TODO: how to connect gulp with php
 gulp.task('browserSync', function() {
-    browserSync.init({
-        server: {
-            baseDir: ''
-        },
-    })
+  connect.server({}, function (){
+    browserSync({
+      proxy: '127.0.0.1:8000'
+    });
+  });
+
+  gulp.watch('**/*.php').on('change', function () {
+    browserSync.reload();
+  });
 })
 
 // Dev task with browserSync
