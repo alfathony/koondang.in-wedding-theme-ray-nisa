@@ -23,10 +23,7 @@
 body {
   overflow-x: hidden;
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-image: url('../img/bg-left.png'), url('../img/bg-right.png');
-  background-repeat: repeat-y, repeat-y;
-  background-position: top left, top right;
-  background-color: #F3E9F2;
+  background-color: #fff;
 }
 .text-muted {
   color: #FFDADA;
@@ -63,9 +60,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+  color :#E9485C;
 }
 .img-centered {
   margin: 0 auto;
@@ -122,8 +120,8 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-xl {
   color: white;
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #E9485C;
+  border-color: #E9485C;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -246,15 +244,19 @@ fieldset[disabled] .btn-xl.active {
     font-size: 1.5em;
   }
 }
+
+/* SECTION HEADER */
+
 header {
-  background-image: url('../img/header-left.png'), url('../img/header-right.png');
-  background-repeat: no-repeat, no-repeat;
-  background-position: top left, top right;
+  background-image: url(../img/header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
 }
 header .intro-text {
-  padding-top: 250px;
+  padding-top: 115px;
   padding-bottom: 50px;
+  color : #fff;
 }
 header .intro-text .intro-lead-in {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -273,8 +275,8 @@ header .intro-text .intro-heading {
 }
 @media (min-width: 768px) {
   header .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px;
+    padding-top: 115px;
+    padding-bottom: 115px;
   }
   header .intro-text .intro-lead-in {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -297,6 +299,18 @@ header .intro-text .intro-heading {
   background: url(../img/sparate.png) no-repeat top center;
 
 }
+
+/* SECTION INSTRODUCE */
+
+#introduce{
+  /*background-image: url('../img/header-left.png'), url('../img/header-right.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, top right;*/
+  padding: 200px 0;
+  background: #fff;
+}
+
+
 .fa-stack{
   width : auto;
   height: auto;
@@ -313,7 +327,10 @@ section {
   padding: 100px 0;
 }
 section h2.section-heading {
-  font-size: 30px;
+  font-style: italic;
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 25px;
   margin-top: 0;
   margin-bottom: 15px;
   /*font-style: italic;*/
@@ -341,7 +358,7 @@ p{
   text-transform: none;
   font-style: italic;
   font-weight: 400;
-  margin-bottom: 75px;
+  margin-bottom: 22px;
   line-height: 26px;
 }
 
@@ -357,9 +374,9 @@ p{
 .service-heading {
   margin: 15px 0;
   text-transform: none;
-  color: #6D9107;
-  font-family: "Droid Serif", Helvetica;
-  font-size: 26px;
+  color: #E9485C;
+  font-family: "Dynalight", Helvetica;
+  font-size: 55px;
   text-align: center;
 
 }
@@ -618,10 +635,9 @@ aside.clients img {
   margin: 50px auto;
 }
 section#contact {
-  background-image: url('../img/footer.png');
+  background-image: url('../img/dotted.png');
   background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-repeat: repeat-x;
 }
 section#contact .section-heading {
   color: white;
@@ -825,6 +841,9 @@ body {
   top: 200px;
   right: 104px;
 }
+.pengatin{
+  margin-top : 20px;
+}
 
 .pengantin p{
   margin-bottom: 20px;
@@ -865,7 +884,7 @@ body {
 
 @media (max-width: 412px) {
   header{
-    background-size: 400px auto, 200px auto;
+    /*background-size: 400px auto, 200px auto;*/
   }
 }
 
@@ -899,7 +918,7 @@ body {
   }
 
   .pengantin .service-heading{
-    font-size: 24px;
+    font-size: 46px;
   }
 
   .turut-mengundang ul > li{

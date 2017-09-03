@@ -2,6 +2,8 @@
 // manage permalink
 // /name-to.group-name
 
+$baseDir = "http://localhost/koondang.in-wedding-theme-ray-nisa/";
+
 if (isset($_GET['permalink']) && !empty($_GET['permalink'])) {
   // replace strip
   $replace = str_replace("-"," ",$_GET['permalink']);
@@ -22,8 +24,6 @@ if (isset($_GET['permalink']) && !empty($_GET['permalink'])) {
 <!-- Ngapain buka buka ini? mohon doa restu ya! -->
 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,10 +33,10 @@ if (isset($_GET['permalink']) && !empty($_GET['permalink'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title><?php echo $nama." ".$group; ?> Undangan Pernikahan</title>
-    <link rel="shortcut icon" href="http://localhost/firda/img/1.jpg">
+    <link rel="shortcut icon" href="<?php echo $baseDir; ?>img/fav.png">
 
     <meta name="description" content="Dengan memohon Ridho serta Rahmat Allah SWT, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk dapat menghadiri Akad Nikah dan Walimatul 'Ursy kami">
-    <meta name="keyword" content="nikah toni fitri, nikahan toni fitri">
+    <meta name="keyword" content="nikah ray nisa, nikahan ray nisa, wedding invitation, undangan pernikahan">
     <meta name="author" content="admin">
     <meta name="googlebot" content="index,follow"/>
     <meta name="format-detection" content="telephone=yes"/>
@@ -46,7 +46,7 @@ if (isset($_GET['permalink']) && !empty($_GET['permalink'])) {
     <meta property="og:type" content="website" />
     <meta property="og:title" content="<?php echo $nama." ".$group; ?> Undangan Pernikahan" />
     <meta property="og:description" content="Dengan memohon Ridho serta Rahmat Allah SWT, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk dapat menghadiri Akad Nikah dan Walimatul 'Ursy kami" />
-    <meta property="og:image" content="http://localhost/firda/img/open-graph.jpg" />
+    <meta property="og:image" content="img/open-graph.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="600" />
     <meta property="og:image:height" content="350" />
@@ -56,21 +56,22 @@ if (isset($_GET['permalink']) && !empty($_GET['permalink'])) {
     <meta content="@alfathony_" name="twitter:creator">
     <meta content="<?php echo $nama." ".$group; ?> Undangan Pernikahan" name="twitter:title">
     <meta content="Dengan memohon Ridho serta Rahmat Allah SWT, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk dapat menghadiri Akad Nikah dan Walimatul 'Ursy kami" name="twitter:description">
-    <meta content="http://localhost/firda/img/open-graph.jpg" name="twitter:image">
+    <meta content="img/open-graph.jpg" name="twitter:image">
 
     <!-- Bootstrap Core CSS -->
-    <link href="http://localhost/firda/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo $baseDir; ?>vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="http://localhost/firda/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Dynalight" rel="stylesheet">
+    <link href="<?php echo $baseDir; ?>vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo $baseDir; ?>https://fonts.googleapis.com/css?family=Dynalight" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Dynalight" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="<?php echo $baseDir; ?>https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="http://localhost/firda/css/style.css" rel="stylesheet">
+    <link href="<?php echo $baseDir; ?>css/style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -98,14 +99,14 @@ if (isset($_GET['permalink']) && !empty($_GET['permalink'])) {
     <header>
         <div class="container">
             <div class="intro-text">
-              <div class="intro-heading">Firda & Reno</div>
+              <center><img src="<?php echo $baseDir; ?>img/pengantin.png" alt="Ray dan Nisa" class="img-responsive" style="margin-bottom : 50px;"></center>
                 <div class="intro-lead-in"><?php echo $kepada_nama; ?></div>
                 <p class="from"><?php echo $group; ?></p>
             </div>
         </div>
     </header>
 
-    <section id="introduce" class="sparate">
+    <section id="introduce" class="">
       <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -120,15 +121,15 @@ if (isset($_GET['permalink']) && !empty($_GET['permalink'])) {
             </div>
             <div class="row pengantin">
               <div class="col-sm-5">
-                <h4 class="service-heading">Fadikasari Firdyawati</h4>
-                 <p class="text-center">Putri dari Bapak Bambang Susatyodjati (Alm) <br>Ibu Dwi Rosmarini, S.TP</p>
+                <h4 class="service-heading">Ray Taufik</h4>
+                 <p class="text-center">Putra dari Bapak Ajat<br>Ibu Yeti Kurniawati</p>
               </div>
               <div class="col-sm-2">
                 <h2 class="dan text-center">&</h2>
               </div>
               <div class="col-sm-5">
-                <h4 class="service-heading">Reno Setyo Aji</h4>
-                 <p class="text-center">Putra dari Bapak Yadi Sujono, S.Pd <br> Ibu Roro Sulastri, S.Pd</p>
+                <h4 class="service-heading">Nisa Khoerun Nisa</h4>
+                 <p class="text-center">Putri dari Bapak Yana Suryana, S.Pd <br> Ibu Yeyet Nuryeti, S.Pd</p>
               </div>
             </div>
         </div>
@@ -147,31 +148,31 @@ if (isset($_GET['permalink']) && !empty($_GET['permalink'])) {
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="http://localhost/firda/img/about/1.jpg" alt="">
+                                <img class="img-circle img-responsive" src="<?php echo $baseDir; ?>img/about/1.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>AKAD NIKAH</h4>
-                                    <h4 class="subheading">Kamis, 10 Agustus 2017</h4>
+                                    <h4 class="subheading">Rabu, 13 Agustus 2017</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="">Jam 09.00 WIB – Selesai</p>
-                                    <p class="">Gedung Panca Bakti DPD Golkar <br> Jl. Arief Rahman Hakim - Subang</p>
+                                    <p class="">Jam 08.30 WIB – 11.00</p>
+                                    <p class="">Cisalak, Kab. Subang</p>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                           <div class="timeline-image">
-                              <img class="img-circle img-responsive" id="float" src="http://localhost/firda/img/about/2.jpg" alt="">
+                              <img class="img-circle img-responsive" id="float" src="<?php echo $baseDir; ?>img/about/2.jpg" alt="">
                           </div>
                           <div class="timeline-panel">
                               <div class="timeline-heading">
-                                  <h4>RESEPSI</h4>
-                                  <h4 class="subheading">Sabtu, 12 Agustus 2017</h4>
+                                  <h4>WALIMATUL URSY</h4>
+                                  <h4 class="subheading">Rabu, 13 Agustus 2017</h4>
                               </div>
                               <div class="timeline-body">
-                                  <p class="">Jam 11.00 WIB - 15.00 WIB </p>
-                                  <p class="">Gedung Panca Bakti DPD Golkar <br> Jl. Arief Rahman Hakim - Subang</p>
+                                  <p class="">Jam 11.00 WIB - Selesai </p>
+                                  <p class="">Cisalak, Kab. Subang</p>
                               </div>
                           </div>
                         </li>
@@ -188,11 +189,11 @@ if (isset($_GET['permalink']) && !empty($_GET['permalink'])) {
             <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/ Ibu/ Saudara/ I berkenan hadir untuk memberikan doa restu kepada putra-putri kami.
 Atas kehadiran dan doa restu Bapak/Ibu/Saudara/I kami ucapkan terima kasih.
 </p>
-            <h3 class="section-subheading ">Lokasi Resepsi</h3>
+            <h3 class="section-subheading ">Lokasi Resepsi <br> Ds. Gardusayang RT/RW 03/02 Kec. Cisalak, Kab. Subang</h3>
             <center>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.7302720800044!2d107.7590008147608!3d-6.555695765910047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e693c81acdc07c5%3A0x71b40194f8dcd4dc!2sGedung+Golkar!5e0!3m2!1sen!2sid!4v1501629687697" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <img src="<?php echo $baseDir; ?>img/denah.png" alt="denah" class="img-responsive" style="margin-bottom : 50px">
             </center>
-            <a href="https://goo.gl/maps/yLgzmqWH9FM2" target="_blank" class="btn btn-default btn-md">Navigasi Google Maps</a>
+            <a href="https://goo.gl/maps/S4fVUxEEMPD2" target="_blank" class="btn btn-default btn-md">Navigasi Google Maps</a>
           </div>
         </div>
       </div>
@@ -214,7 +215,7 @@ Atas kehadiran dan doa restu Bapak/Ibu/Saudara/I kami ucapkan terima kasih.
             <div class="row">
                 <div class="col-lg-12">
                   <?php if (isset($_GET['permalink']) && !empty($_GET['permalink'])) { ?>
-                    <form name="sentMessage" id="" action="https://docs.google.com/forms/d/e/1FAIpQLSef6xh955_VzP0wo8tI-7vpft1lrNHC4wunLm7zrekamohDiA/formResponse" method="GET" novalidate>
+                    <form name="sentMessage" id="" action="https://docs.google.com/forms/d/e/1FAIpQLSc7fq4z3KBGOBrNWpQ7F95rOUN5WJ3GHPGuZQb6_lnnStBUXQ/formResponse" method="GET" novalidate>
                       <input type="hidden" name="usp" value="pp_url">
                         <div class="row">
                             <div class="col-md-6">
@@ -262,7 +263,7 @@ Atas kehadiran dan doa restu Bapak/Ibu/Saudara/I kami ucapkan terima kasih.
                 </div>
                 <div class="col-md-6">
                     <ul class="list-inline quicklinks">
-                        <li><a href="http://koondang.in" target="_blank" style="color : #333 ">Design Modified by koondang.in</a>
+                        <li><a href="http://koondang.in" title="buat undangan pernikahan" alt="buat undangan pernikahan" target="_blank" style="color : #333 " rel="dofollow">Design Modified by koondang.in</a>
                         </li>
                     </ul>
                 </div>
@@ -271,20 +272,20 @@ Atas kehadiran dan doa restu Bapak/Ibu/Saudara/I kami ucapkan terima kasih.
     </footer>
 
     <!-- jQuery -->
-    <script src="http://localhost/firda/vendor/jquery/jquery.min.js"></script>
+    <script src="<?php echo $baseDir; ?>vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="http://localhost/firda/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?php echo $baseDir; ?>vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+    <script src="<?php echo $baseDir; ?>https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="http://localhost/firda/js/jqBootstrapValidation.js"></script>
-    <script src="http://localhost/firda/js/contact_me.js"></script>
+    <script src="<?php echo $baseDir; ?>js/jqBootstrapValidation.js"></script>
+    <script src="<?php echo $baseDir; ?>js/contact_me.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="http://localhost/firda/js/agency.min.js"></script>
+    <script src="<?php echo $baseDir; ?>js/agency.min.js"></script>
 
 
 </body>

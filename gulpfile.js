@@ -75,17 +75,12 @@ gulp.task('copy', function() {
 gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
 
 // Configure the browserSync task
-// TODO: how to connect gulp with php
 gulp.task('browserSync', function() {
-  connect.server({}, function (){
-    browserSync({
-      proxy: '127.0.0.1:8000'
-    });
-  });
-
-  gulp.watch('**/*.php').on('change', function () {
-    browserSync.reload();
-  });
+    browserSync.init({
+        server: {
+            baseDir: ''
+        },
+    })
 })
 
 // Dev task with browserSync
